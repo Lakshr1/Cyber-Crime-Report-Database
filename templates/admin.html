@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/admin.css">
+    <title>Admin</title>
+</head>
+<body>
+   <center> <h1>Reported Crimes </h1> </center>
+    {% for entry in entries %}
+        <div class="reports"><center>
+         <h2 class="name" > Name :      {{ entry[0] }}</h2>
+         <h2 class="email" > Email :    {{ entry[1] }}</h2>
+         <h2 class="email" > Complain : {{ entry[2] }}</h2>
+         <h2 class="email" > Date :     {{ entry[3] }}</h2>
+        </center> 
+         <!-- <time datetime="{{ entry[2] }}" class="entry__date">• {{entry[2]}} </time> -->
+        </div>
+       
+
+    {% endfor %}
+</body>
+</html>

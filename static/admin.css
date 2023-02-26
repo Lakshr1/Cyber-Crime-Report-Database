@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+    font-family: 'Play', sans-serif;
+}
+.reports{
+    background-color: #212121;
+    color: #32E0C4;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
